@@ -1,0 +1,80 @@
+/* Global Reset and Body Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #151515;
+    color: #a7a7a7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Header Styles */
+header {
+    top: 0;
+    height: 56px;
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.33); /* Use rgba for transparency */
+    backdrop-filter: blur(6px);
+    color: #fff;
+}
+
+/* Main Section Styles */
+main {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+/* Footer Styles */
+footer {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Individual Language Section Styles */
+.languages {
+    width: 100%; /* Full width by default */
+    max-width: 400px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #000;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.languages h3 {
+    color: #e4e4e4;
+}
+
+.languages p a {
+    color: #1d811d;
+    text-decoration: none;
+}
+
+.languages p a:hover {
+    color: #53df53;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .languages {
+        height: 300px;
+    }
+}
